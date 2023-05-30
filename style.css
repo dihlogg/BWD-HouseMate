@@ -1,0 +1,789 @@
+/* Main Styling */
+body,
+html {
+    line-height: 1.7em;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: auto;
+    height: 100%;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #444;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+/* Class Utility */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.text-primary {
+    color: #f7c08a;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+    font-size: auto;
+}
+
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+    display: inline-block;
+    font-size: 18px;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-light:hover {
+    background: #f2726a;
+}
+
+
+.bg-primary {
+    background: #f7c08a;
+    color: #333;
+}
+
+.clr {
+    clear: both;
+}
+
+.l-heading {
+    font-size: 40px;
+}
+
+/* Padding */
+.py-1 {
+    padding: 10px 0;
+}
+
+.py-2 {
+    padding: 20px 0;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+/* Navbar */
+#navbar {
+    background: black;
+    color: white;
+    overflow: auto;
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    float: left;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    margin-left: 70px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: beige;
+    color: black;
+}
+
+/* SearchContainer */
+#search-container {
+    height: 650px;
+    text-align: center;
+    background: url(https://www.elle.vn/wp-content/uploads/2022/02/22/469059/cau-vang-da-nang-bestprice-travel_optimized.jpg);
+    background-size: cover;
+}
+
+#search-container h2 {
+    font-size: 60px;
+    line-height: 1.2em;
+    text-align: center;
+    padding-top: 130px;
+}
+
+#search-container .search_bar {
+    padding-top: 150px;
+    display: flex;
+    text-align: center;
+    border-radius: 60px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+#search-container .search-bar input {
+    background: transparent;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    padding: 13px 20px;
+    border: 1px;
+    text-align: center;
+}
+
+#search-container .search-bar button img {
+    width: 25px;
+}
+
+::placeholder {
+    color: black;
+}
+
+#search-container .search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* container-slideshow  */
+#container-slideshow {
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+}
+
+#container-slideshow .main {
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#container-slideshow .main .img-feature {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+
+#container-slideshow .main .control {
+    position: absolute;
+    top: 50%;
+    font-size: 70px;
+    color: white;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#container-slideshow .list-img {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-slideshow .list-img div {
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#container-slideshow .list-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.active {
+    background: rgb(207, 63, 63);
+}
+
+/* container-info  */
+#container-info {
+    width: 100%;
+    height: 650px;
+    padding: 0px;
+}
+
+#container-info .container-info-center {
+    width: 56%;
+    height: 650px;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f7c08a;
+    float: left;
+}
+
+#container-info .container-info-center p {
+    padding: 15px 10px;
+    margin: 10px 0px;
+}
+
+#container-info .container-info-left {
+    width: 22%;
+    height: 650px;
+    float: left;
+    background-color: #f7c08a;
+    background-image: url(https://assets.website-files.com/58735fe5dd26f82d0112076b/58735fe5dd26f82d011207bb_bg_honeycomb.png);
+    background-position: 22% 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container-info .container-info-right {
+    width: 22%;
+    height: 650px;
+    float: right;
+    background-color: #f7c08a;
+    background-image: url(https://assets.website-files.com/58735fe5dd26f82d0112076b/58735fe5dd26f82d011207bb_bg_honeycomb.png);
+    background-position: 22% 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* container-connect  */
+#container-connect {
+    width: 100%;
+    height: 800px;
+}
+
+#container-connect .container-connect1 {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+#container-connect .container-connect1 .connect-top {
+    height: 350px;
+}
+
+#container-connect .container-connect1 .connect-top h5 {
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+#container-connect .container-connect1 .connect-top p {
+    padding: 10px 0px;
+}
+
+#container-connect .container-connect1 .connect-bottom img {
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+#container-connect .container-connect2 {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    float: right;
+}
+
+/* Home Info */
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url(https://stevbros.edu.vn/danh-lam-thang-canh-noi-tieng-o-viet-nam/imager_17_1671_700.jpg);
+    min-height: 100%;
+    background-size: cover;
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+
+#home-info .info-content h4 {
+    font-size: 30px;
+}
+
+/* feature  */
+/* #fearute {
+    text-align: center;
+    height: 320px;
+    padding: 150px 0px;
+}
+#feature .bg-left {
+    float: left;
+    width: 50%;
+    height: 250px;
+    background: #f7c08a; 
+    padding: 50px;
+    text-align: center;
+}
+#feature .bg-right {
+    float: right;
+    width: 50%;
+    height: 250px;
+    background: #f7c08a;
+    padding: 50px;
+    text-align: center;
+}
+feature i {
+    font-size: 25px;
+} */
+
+/* Features */
+.box {
+    float: left;
+    width: 33.3%;
+    height: 320px;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+#fuetures i {
+    font-size: 25px;
+}
+
+/* About Info */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info {
+    margin-top: 67.19px;
+}
+
+#about-info h1 {
+    padding-top: 10px;
+}
+
+/* Testimonials */
+#testimonials {
+    height: 500px;
+    background: url('photo-1.jpg') no-repeat center center/cover;
+    padding-top: 100px;
+}
+
+#testimonials h2 {
+    color: black;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 10px;
+}
+
+#testimonials .testimonial {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+#contact-form {
+    margin-top: 67.19px;
+}
+
+#contact-form h1 {
+    padding-top: 10px;
+}
+
+#contact-info {
+    margin: 0;
+    height: 260px;
+}
+
+/* container-pre  */
+#container-pre .container-rev h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#container-pre .container-info {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+#container-pre .container-info img {
+    display: block;
+    margin: auto;
+    width: 320px;
+    border-radius: 50%;
+    float: left;
+    margin: 55px;
+    padding: 0px;
+}
+
+/* dropdown */
+#home-sort {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23242a;
+
+}
+.dropdown {
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    background: #2a2f3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select-clicked {
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover {
+    background: #323741;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #2a2d35;
+}
+.active {
+    background: #23242a;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+/* profile-card */
+#profile-card {
+    background: #242628;
+    width: 300px;
+    height: 410px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 10px 15px;
+    float: left;
+    margin-left: 20px;
+}
+
+#profile-card .card-img .img-1 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+#profile-card .card-img {
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    transform: translateY(25px);
+    transition: 0.5s;
+}
+
+#profile-card .card-img:hover {
+    width: 300px;
+    height: 410px;
+    border-radius: unset;
+    transform: unset;
+    border: none;
+}
+
+#profile-card h2 {
+    margin-top: 30px;
+    padding: 0px;
+}
+
+#profile-card p {
+    color: var(--primary-color);
+    padding: 0px;
+    margin: 0px;
+}
+
+#profile-card .card-social {
+    margin: 9px 0px;
+}
+
+#profile-card .card-social a {
+    color: white;
+    margin: 25px 20px;
+    font-size: 20px;
+}
+
+#profile-card button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: white;
+    float: left;
+    margin-left: 5px;
+}
+
+#profile-card button:hover {
+    background: #f2726a;
+}
+
+#profile-card .icon i {
+    color: white;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+/* Footer */
+#main-footer {
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    background: #444;
+}
+
+#main-footer .col {
+    width: 100%;
+    padding: 0px 25px;
+    float: left;
+    background: #444;
+    margin: 0px auto;
+    display: flex;
+    /* col -> Flex container */
+    justify-content: center;
+    /*căn giữa theo chiều ngang */
+    align-items: center;
+    /*căn giữa theo chiều dọc  */
+}
+
+#main-footer .col-info {
+    width: 70%;
+    float: left;
+}
+
+#main-footer .col-info1 {
+    width: 25%;
+    float: left;
+}
+
+#main-footer .col-info2 {
+    width: 25%;
+    float: left;
+}
+
+#main-footer .col-info3 {
+    width: 50%;
+    float: left;
+}
+
+#main-footer .textcenter {
+    text-align: center;
+}
+
+#main-footer h6 {
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+#main-footer p {
+    font-size: 18px;
+}
